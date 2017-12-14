@@ -5,3 +5,4 @@ USER root
 # scrub out tmpnb-specific stuff
 RUN rm -rf $HOME/.jupyter
 USER $NB_USER
+COPY ["notebooks/Welcome to Python.ipynb", "$HOME/Welcome to Python.ipynb"]
